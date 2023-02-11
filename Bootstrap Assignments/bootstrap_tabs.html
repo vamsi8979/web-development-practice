@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+<body>
+  <h1 class="text-center">bootstrap tabs</h1>
+  <div class="container mt-1">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="wonders-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#wonders" 
+                type="button" 
+                role="tab" 
+                aria-controls="wonders" 
+                aria-selected="true">Seven New Wonders Of The World
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="programming-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#programming" 
+                type="button" 
+                role="tab" 
+                aria-controls="programming" 
+                aria-selected="false">Programming Languages
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="scientists-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#scientists" 
+                type="button" 
+                role="tab" 
+                aria-controls="scientists" 
+                aria-selected="false">Computer Scientists
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="wonders" role="tabpanel" aria-labelledby="wonders-tab">
+          <div class="container mt-2">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card mb-3" >
+                  <img src="Colosseum.jpg" class="card-img-top" alt="Colosseum">
+                  <div class="card-body">
+                    <h5 class="card-title">The Colosseum, Rome, Italy</h5>
+                    <p class="card-text">
+                      The Colosseum is the great oval amphitheater in the center of Rome where gladiators once fought for their life.
+                      The largest amphitheater ever built, it was constructed from sand and stone over eight years, 
+                      from AD72 to AD80.
+                    </p>
+                  </div>
+                </div>
+                <div class="card mb-3" >
+                  <img src="The Great Wall of China.jpg" class="card-img-top" alt="The Great Wall of China.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">The Great Wall of China</h5>
+                    <p class="card-text">
+                       The Great Wall of China is a huge barrier that spans thousands of miles along China’s historic northern border.
+                       Created over millennia, the wall began its life as a series of smaller walls dating back to the 7th century BCE, 
+                       built as protective barriers against nomadic raids. In 220 BCE .Today the wall is recognized as one of the seven wonders,
+                       which, including all its branches, measures a whopping 13,171 miles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card mb-3" >
+                  <img src="The Taj Mahal.avif" class="card-img-top" alt="The Taj Mahal.avif">
+                  <div class="card-body">
+                    <h5 class="card-title">The Taj Mahal, India</h5>
+                    <p class="card-text">
+                      India’s renowned Taj Mahal (Persian for Crown of Palaces) is the stunning white marble 
+                      mausoleum on the bank of the Yamuna River in the city of Agra,
+                      and it has been selected as one of the seven wonders of the world. 
+                      Mughal emperor, Shah Jahan built the temple as a tomb for his beloved wife Mumtaz Mahal
+                    </p>
+                  
+                  </div>
+                </div>
+                <div class="card mb-3" >
+                  <img src="Machu Picchu.jpg" class="card-img-top" alt="Machu Picchu.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">Machu Picchu, Peru</h5>
+                    <p class="card-text">
+                      Machu Picchu is a lost treasure of the 15th century,
+                      a rare citadel discovered high in the Andes mountains above the Peruvian Sacred Valley.
+                      Astonishingly, it is one of the only pre-Columbian ruins found nearly intact,
+                      featuring evidence of former plazas, temples, agricultural terraces and homes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card mb-3" >
+                  <img src="Christ the Redeemer.jpg" class="card-img-top" alt="Christ the Redeemer.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title">Christ the Redeemer, Brazil</h5>
+                    <p class="card-text">
+                      The totemic statue of Christ the Redeemer stands over Rio de Janeiro on the top of Mount Corcovado.
+                      At 30 meters tall, this monument is an iconic emblem of Brazil. This huge public artwork was designed
+                      by the Polish-French sculptor Paul Landowski in the 1920s and completed by Brazilian engineer Heitor da Silva Costa,
+                      and French engineer Albert Caquot in 1931. 
+                    </p>  
+                  </div>
+                </div>
+                <div class="card mb-3" >
+                  <img src="Chichén Itzá.avif" class="card-img-top" alt="Chichén Itzá.avif">
+                  <div class="card-body">
+                    <h5 class="card-title">Chichén Itzá, Mexico</h5>
+                    <p class="card-text">
+                      Deep in the Mexican state of Yucatán lies Chichen Itza,
+                      a historic Mayan city built between the 9th and 12th centuries.
+                      Constructed by the pre-Columbian Mayan tribe Itzá, the city includes a series of monuments and temples.
+                      The most celebrated is El Castillo, also known as the Temple of Kukulcan.
+                      It is a huge step pyramid in the center of the city which was built as a devotional temple to the god Kukulkan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="card mb-3" >
+                  <img src="Colosseum.jpg" class="card-img-top" alt="Colosseum">
+                  <div class="card-body">
+                    <h5 class="card-title">Petra, Jordan</h5>
+                    <p class="card-text">
+                      Petra, the ancient city in southern Jordan is also known as the ‘rose city’ for its golden hue.
+                      It dates as far back as 312BC. Set in a remote valley,
+                      this ancient city was founded by the Arab Nabataeans,
+                      a sophisticated civilization who carved stunning architecture and complex waterways out of surrounding rock faces.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="programming" role="tabpanel" aria-labelledby="programming-tab">
+          <div class="container mt-2">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="java.jpeg" class="img-fluid" alt="java.jpeg">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Java Programming Language</h5>
+                        <p class="card-text">
+                          Java is considered one of the most popular programming languages,
+                          famous for its user-friendly and flexible demeanour that can be used for the development
+                          of platforms and web applications.
+                          Java is a high-level and general-purpose programming language that is used as “Write Once, Run Anywhere”.
+                        </p>
+                        <p>
+                          Developed by Sun Microsystem, Java was known as OAK initially which can be run on any Java Virtual Machine (JVM).
+                          Java is an object-oriented programming language that is used for robust coding along with a library of classes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="python.jpg" class="img-fluid" alt="python.jpg">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">
+                          Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+                          <ul>
+                            <li>Python can be used on a server to create web applications.</li>
+                            <li>Python can be used alongside software to create workflows.</li>
+                            <li>Python can connect to database systems. It can also read and modify files.</li>
+                            <li>Python can be used to handle big data and perform complex mathematics.</li>
+                            <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="csharp.png" class="img-fluid" alt="csharp.png">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">C# language</h5>
+                        <p class="card-text">
+                          C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
+                        </p>
+                        <p>
+                          It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+                          The first version was released in year 2002. The latest version, C# 11, was released in November 2022.
+                        </p>
+                        <ul>
+                          <li>It is one of the most popular programming language in the world</li>
+                          <li>It is easy to learn and simple to use</li>
+                          <li>It has a huge community support</li>
+                          <li>C# is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                          <li>As C# is close to C, C++ and Java, it makes it easy for programmers to switch to C# or vice versa</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="swift.jpeg" class="img-fluid" alt="swift.jpeg">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Swift Language</h5>
+                        <p class="card-text">
+                          Swift is a powerful and intuitive programming language for iOS, iPadOS, macOS, tvOS, and watchOS.
+                          Writing Swift code is interactive and fun, the syntax is concise yet expressive,
+                          and Swift includes modern features developers love. 
+                          Swift code is safe by design and produces software that runs lightning-fast.
+                          Swift is the result of the latest research on programming languages, 
+                          combined with decades of experience building Apple platforms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="scientists" role="tabpanel" aria-labelledby="scientists-tab">
+          <h4 class="text-center">Computer Scientists</h4>
+          <div class="card-group m-4">
+              <div class="card">
+                <img src="turing.jpg" class="card-img-top" alt="turing.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Alan Turing (1912 - 1954) </h5>
+                  <p class="card-text">
+                      <b>Alan Mathison Turing</b> was an English mathematician, computer scientist, logician, cryptanalyst,
+                     philosopher, and theoretical biologist.
+                  </p>
+                  <p>
+                    Turing was highly influential in the development of theoretical computer science,
+                    providing a formalisation of the concepts of algorithm and computation with the Turing machine,
+                    which can be considered a model of a general-purpose computer.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="Charles_Babbage.jpg" class="card-img-top" alt="Charles_Babbage.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Charles Babbage (1791 - 1871)</h5>
+                  <p class="card-text">
+                    <b>Charles Babbage</b> was an English polymath.[1] A mathematician, philosopher, inventor and
+                    mechanical engineer, Babbage originated the concept of a digital programmable computer
+                  </p>
+                  <p>
+                    Babbage is considered by some to be "father of the computer".
+                    Babbage is credited with inventing the first mechanical computer, the Difference Engine,
+                    that eventually led to more complex electronic designs, though all the essential ideas of
+                    modern computers are to be found in Babbage's Analytical Engine, programmed using a principle
+                    openly borrowed from the Jacquard loom.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="dennis_ritchie.jpg" class="card-img-top" alt="dennis_ritchie.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Dennis Ritchie (1941 - 2011)</h5>
+                  <p class="card-text">
+                    <b>Dennis MacAlistair Ritchie</b> was an American computer scientist.
+                    He is most well-known for creating the C programming language and,
+                    with long-time colleague Ken Thompson, the Unix operating system and B programming language.
+                  </p>
+                  <p>
+                    Ritchie and Thompson were awarded the Turing Award from the ACM in 1983,
+                    the Hamming Medal from the IEEE in 1990 and the National Medal of Technology
+                    from President Bill Clinton in 1999
+                  </p>
+                </div>
+              </div>
+          </div>
+          <h4 class="text-center">Physicists</h4>
+          <div class="card-group m-4">
+              <div class="card">
+                <img src="albert.jpg" class="card-img-top" alt="albert.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Albert Einstein (1879 - 1955)</h5>
+                  <p class="card-text">
+                    <b>Albert Einstein</b>  was a German-born theoretical physicist,
+                     widely acknowledged to be one of the greatest and most influential physicists of all time.
+                  </p>
+                  <p>
+                    Einstein is best known for developing the theory of relativity,
+                    but he also made important contributions to the development of the theory of quantum mechanics.
+                    Relativity and quantum mechanics are the two pillars of modern physics.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="newton.jpg" class="card-img-top" alt="newton.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Isaac Newton (1643 - 1642)</h5>
+                  <p class="card-text">
+                    <b>Sir Isaac Newton</b> was an English mathematician, physicist,
+                    astronomer, alchemist, theologian, and author (described in his time as a "natural philosopher").
+                  </p>
+                  <p>
+                    He was a key figure in the philosophical revolution known as the Enlightenment.
+                    His book Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy),
+                    first published in 1687, established classical mechanics
+                  </p>
+                  <p>
+                    Newton formulated the laws of motion and universal gravitation that formed the dominant scientific
+                    viewpoint for centuries until it was superseded by the theory of relativity
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="richard.jpeg" class="card-img-top" alt="richard.jpeg">
+                <div class="card-body">
+                  <h5 class="card-title">Richard Feynman (1918 - 1988)</h5>
+                  <p class="card-text">
+                    <b>Richard Phillips Feynman</b> was an American theoretical physicist, 
+                    known for his work in the path integral formulation of quantum mechanics,
+                    the theory of quantum electrodynamics, the physics of the superfluidity of supercooled liquid helium,
+                    as well as his work in particle physics for which he proposed the parton model
+                  </p>
+                  <p>
+                    For his contributions to the development of quantum electrodynamics, 
+                    Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin'ichirō Tomonaga.
+                  </p>
+                  <p>
+                    Feynman developed a widely used pictorial representation scheme for the mathematical
+                    expressions describing the behavior of subatomic particles, which later became known as Feynman diagrams
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Login</title>
+</head>
+<body>
+
+<form action="javascript:login()">
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value="Tony@123.com"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" value="1234"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+<script>
+function login() {
+  alert(this.email.value+' '+this.password.value);
+}
+</script>
+</html>

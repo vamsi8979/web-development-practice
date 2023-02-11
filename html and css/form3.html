@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Form two</title></head>
+<body>
+	<h1>Survey</h1>
+	<form action="javascript:survey()" id="survey">
+		
+		<input type="text" id="fname" name="fname" placeholder="Name"><br>
+		<input type="text" id="email" name="email" placeholder="Email"><br><br>
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="Male">
+		<label for="male">Male</label>
+		<input type="radio" id="Female" name="gender" value="Female">
+		<label for="Female">Female</label><br><br>
+
+		<label for="courses">Select Hobbies:</label><br>
+		<input type="checkbox" id="Movies" name="Movies" value="Movies">
+		<label for="Movies"> Movies</label><br>
+		<input type="checkbox" id="Video_Games" name="Video_Games" value="Video Games">
+		<label for="Video_Games"> Video Games</label><br>
+		<input type="checkbox" id="Music" name="Music" value="Music">
+		<label for="Music"> Music</label><br>
+		<input type="checkbox" id="Puzzles" name="Puzzles" value="Puzzles">
+		<label for="Puzzles"> Puzzles</label><br><br>
+		
+		<label for="favcolor">Select your favorite color:</label>
+  		<input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+		
+		<label for="profession">Choose your profession:</label>
+		<select id="profession" name="profession"> 
+			<option value="Software Engineer">Software Engineer</option>
+			<option value="Teacher">Teacher</option>
+			<option value="Accountant">Accountant</option>
+			<option value="Actor/Actress">Actor/Actress</option>
+			<option value="Doctor">Doctor</option>
+			<option value="Clerk">Clerk</option>
+			<option value="Student">Student</option>
+			<option value="Unemployed">Unemployed</option>
+		</select><br><br>
+
+		
+
+		<label for="birthday">Birthday:</label>
+		<input type="date" id="birthday" name="birthday"><br><br>
+
+		<textarea name="message" rows="10" cols="30">Please enter your Feed back here.</textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+<script>
+	function survey(){
+		var form = document.getElementById("survey");
+		alert(
+			form.elements["fname"].value  +'\n'+
+			form.elements["email"].value  +'\n'+
+			form.elements["gender"].value +'\n'+
+			'Movies - selected : '  +form.elements["Movies"].checked +'\n'+
+			'Video Games - selected : '+form.elements["Video_Games"].checked +'\n'+
+			'Music - selected : '+form.elements["Music"].checked +'\n'+
+			'Puzzles - selected : '+form.elements["Puzzles"].checked +'\n'+
+			'Fav color : '+form.elements["favcolor"].value +'\n'+
+			'Profession : '+form.elements["profession"].value +'\n'+
+			'Birthday : '+form.elements["birthday"].value +'\n'
+		)
+	}
+</script>
+</html>

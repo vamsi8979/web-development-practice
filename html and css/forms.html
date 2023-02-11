@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+
+<form action="javascript:myFunction()">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Tony"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Stark"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+<script>
+function myFunction() {
+  alert(this.fname.value+' '+this.lname.value);
+}
+</script>
+</html>

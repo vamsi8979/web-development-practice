@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Form two</title></head>
+<body>
+	<h1>Sign up</h1>
+	<form action="javascript:register()" id="register">
+		
+		<input type="text" id="fname" name="fname" placeholder="Name"><br>
+		
+		<input type="text" id="email" name="email" placeholder="Email"><br>
+		
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="Male">
+		
+		<label for="male">Male</label>
+		<input type="radio" id="Female" name="gender" value="Female">
+		<label for="Female">Female</label><br>
+
+		<label for="courses">Select Courses:</label><br>
+		<input type="checkbox" id="java" name="java" value="Java">
+		<label for="java"> Java</label><br>
+		<input type="checkbox" id="python" name="python" value="Python">
+		<label for="python"> Python</label><br>
+		<input type="checkbox" id="dotnet" name="dotnet" value="Dotnet">
+		<label for="dotnet"> Dotnet</label><br>
+		
+		<input type="password" id="pwd" name="pwd" placeholder="Password"><br>
+		
+		<input type="password" id="cnf_pwd" name="cnf_pwd" placeholder="Confirm Password">
+
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+<script>
+	function register(){
+		var form = document.getElementById("register");
+		
+		alert(
+			form.elements["fname"].value  +'\n'+
+			form.elements["email"].value  +'\n'+
+			form.elements["gender"].value +'\n'+
+			'Java - selected : '  +form.elements["java"].checked +'\n'+
+			'Python - selected : '+form.elements["python"].checked +'\n'+
+			'dotnet - selected : '+form.elements["dotnet"].checked +'\n'+
+			form.elements["pwd"].value
+			
+		)
+	}
+</script>
+</html>
